@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50103" started-at="2019-12-08T08:29:30Z" finished-at="2019-12-08T08:30:20Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="19661" started-at="2019-12-08T08:29:30Z" finished-at="2019-12-08T08:29:50Z">
+      <class name="CCS.Home_page_test">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Home_page_test@5fdba6f9]" name="starttest" is-config="true" duration-ms="10357" started-at="2019-12-08T08:29:30Z" finished-at="2019-12-08T08:29:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="homepage(java.lang.String, java.lang.String)[pri:0, instance:CCS.Home_page_test@5fdba6f9]" name="homepage" duration-ms="8868" started-at="2019-12-08T08:29:40Z" data-provider="getdata" finished-at="2019-12-08T08:29:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method status="PASS" signature="close()[pri:0, instance:CCS.Home_page_test@5fdba6f9]" name="close" is-config="true" duration-ms="227" started-at="2019-12-08T08:29:49Z" finished-at="2019-12-08T08:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- CCS.Home_page_test -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="16090" started-at="2019-12-08T08:29:50Z" finished-at="2019-12-08T08:30:06Z">
+      <class name="CCS.login_page_test">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test@5427c60c]" name="starttest" is-config="true" duration-ms="7665" started-at="2019-12-08T08:29:50Z" finished-at="2019-12-08T08:29:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:CCS.login_page_test@5427c60c]" name="login" duration-ms="6812" started-at="2019-12-08T08:29:58Z" finished-at="2019-12-08T08:30:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="close()[pri:0, instance:CCS.login_page_test@5427c60c]" name="close" is-config="true" duration-ms="1607" started-at="2019-12-08T08:30:04Z" finished-at="2019-12-08T08:30:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- CCS.login_page_test -->
+    </test> <!-- Test2 -->
+    <test name="Test4" duration-ms="1" started-at="2019-12-08T08:30:06Z" finished-at="2019-12-08T08:30:06Z">
+    </test> <!-- Test4 -->
+    <test name="Test3" duration-ms="13826" started-at="2019-12-08T08:30:06Z" finished-at="2019-12-08T08:30:20Z">
+      <class name="CCS.login_page_test_using_dataprovider_annotation">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@18078bef]" name="starttest" is-config="true" duration-ms="8075" started-at="2019-12-08T08:30:06Z" finished-at="2019-12-08T08:30:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="login_multiple_data(java.lang.String, java.lang.String)[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@18078bef]" name="login_multiple_data" duration-ms="5561" started-at="2019-12-08T08:30:14Z" data-provider="getdata" finished-at="2019-12-08T08:30:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_multiple_data -->
+        <test-method status="PASS" signature="close()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@18078bef]" name="close" is-config="true" duration-ms="184" started-at="2019-12-08T08:30:20Z" finished-at="2019-12-08T08:30:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- CCS.login_page_test_using_dataprovider_annotation -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>

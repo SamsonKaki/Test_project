@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="9499" started-at="2019-12-08T08:22:38Z" finished-at="2019-12-08T08:22:47Z">
+    <groups>
+    </groups>
+    <test name="Test3" duration-ms="9499" started-at="2019-12-08T08:22:38Z" finished-at="2019-12-08T08:22:47Z">
+      <class name="CCS.login_page_test_using_dataprovider_annotation">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@6b9651f3]" name="starttest" is-config="true" duration-ms="8349" started-at="2019-12-08T08:22:38Z" finished-at="2019-12-08T08:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="login_multiple_data(java.lang.String, java.lang.String)[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@6b9651f3]" name="login_multiple_data" duration-ms="846" started-at="2019-12-08T08:22:46Z" data-provider="getdata" finished-at="2019-12-08T08:22:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_multiple_data -->
+        <test-method status="PASS" signature="close()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@6b9651f3]" name="close" is-config="true" duration-ms="249" started-at="2019-12-08T08:22:47Z" finished-at="2019-12-08T08:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- CCS.login_page_test_using_dataprovider_annotation -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
