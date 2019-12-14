@@ -46,9 +46,16 @@ public class login_page_test_using_dataprovider_annotation extends base {
 		//data[1][0]="invalid username";
 		//data[1][1]="invalid password";
 		return data;
-				
+		
+			
 	}
 	
+	private void gituser() {
+		// TODO Auto-generated method stub
+		System.out.println("gitsuff");
+	}
+
+
 	@AfterTest
 	public void close()
 	{
