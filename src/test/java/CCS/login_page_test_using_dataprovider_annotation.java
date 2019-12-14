@@ -42,7 +42,7 @@ public class login_page_test_using_dataprovider_annotation extends base {
 	{
 		Object [][] data= new Object[1][2];
 		data [0][0]="dev";
-		data[0][1]="Password1";
+		data[0][1]="Password";
 		//data[1][0]="invalid username";
 		//data[1][1]="invalid password";
 		return data;
