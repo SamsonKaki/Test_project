@@ -9,10 +9,10 @@ public class login_Pageobjects_elements {
 	public WebDriver driver;
 	
 	
-	By username=By.cssSelector("input[name*='UserName']");
-	By password=By.cssSelector("input[name*='Password']");
-	By submit = By.cssSelector("button[type*='submit']");
-	By signout = By.cssSelector("a[href*='LogOff']");
+	By username=By.cssSelector("input[id='email']");
+	By password=By.cssSelector("input[id*='passwd']");
+	By submit = By.cssSelector("button[id*='SubmitLogin']");
+	//By signout = By.cssSelector("a[title*='Log me out']");
 	
 	public login_Pageobjects_elements(WebDriver driver)
 	
@@ -30,14 +30,14 @@ public class login_Pageobjects_elements {
     {
     return driver.findElement(password);
       }
-    public WebElement loginbutt()
+  public WebElement loginbutt()
     {
     	return driver.findElement(submit);
     }
-    public WebElement signout()
+  /*  public WebElement signout()
     {
     	return driver.findElement(signout);
-    }
+    }*/
 
 
 }

@@ -4,15 +4,14 @@
   <listeners>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test2(failed)">
+  <test thread-count="5" verbose="0" name="Test3(failed)">
     <classes>
-      <class name="CCS.login_page_test">
+      <class name="CCS.login_page_test_using_dataprovider_annotation">
         <methods>
+          <include name="login_multiple_data" invocation-numbers="0"/>
           <include name="starttest"/>
-          <include name="close"/>
-          <include name="login"/>
         </methods>
-      </class> <!-- CCS.login_page_test -->
+      </class> <!-- CCS.login_page_test_using_dataprovider_annotation -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

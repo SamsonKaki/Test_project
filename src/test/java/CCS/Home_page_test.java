@@ -23,12 +23,13 @@ public class Home_page_test extends base {
 	@Test(dataProvider="getdata")
 	public void homepage(String username, String password) throws IOException
 	{	
+		Home_pageobject_elements hp= new Home_pageobject_elements(driver);
+		hp.navigatesigninpage().click();
+		
 	    login_Pageobjects_elements l=new login_Pageobjects_elements(driver);
 		l.loginuser().sendKeys(username);
 		l.loginpass().sendKeys(password);
 		l.loginbutt().click();
-		Home_pageobject_elements hp= new Home_pageobject_elements(driver);
-		hp.myformsdata().click();
 		
 		//driver.close();
 	}
@@ -37,17 +38,17 @@ public class Home_page_test extends base {
 	public Object[][] getdata()
 	{
 		Object [][] data= new Object[1][2];
-		data [0][0]="dev";
-		data[0][1]="Password1";
+		data [0][0]="samsonkaki1995@gmail.com";
+		data[0][1]="Christ@8374";
 		//data[1][0]="invalid username";
 		//data[1][1]="invalid password";
 		return data;
 	}
-	@AfterTest
+	/*@AfterTest
 	public void close()
 	{
 		driver.close();
-	}
+	}*/
 
 	
 }

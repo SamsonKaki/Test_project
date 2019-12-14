@@ -23,7 +23,7 @@ public class base {
 	public WebDriver driverintializer() throws IOException {
 		
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\Samson\\CCSProject\\src\\main\\java\\resources\\ccsdata.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\Samson\\gitstuff\\src\\main\\java\\resources\\ccsdata.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		

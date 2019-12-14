@@ -5,6 +5,8 @@
     <classes>
       <class name="CCS.login_page_test">
         <methods>
+          <include name="starttest"/>
+          <include name="close"/>
           <include name="login"/>
         </methods>
       </class> <!-- CCS.login_page_test -->

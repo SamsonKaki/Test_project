@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObjects.Home_pageobject_elements;
 import pageObjects.login_Pageobjects_elements;
 import resources.base;
 
@@ -25,18 +26,22 @@ public class login_page_test extends base {
 	@Test
 	public void login() throws IOException
 	{
+		Home_pageobject_elements hp= new Home_pageobject_elements(driver);
+		hp.navigatesigninpage().click();
+		
 		login_Pageobjects_elements l=new login_Pageobjects_elements(driver);
-		l.loginuser().sendKeys("dev");
-		l.loginpass().sendKeys("Password1");
+		
+		l.loginuser().sendKeys("samsonkaki1995@gmail.com");
+		l.loginpass().sendKeys("Christ@8374");
 		l.loginbutt().click();
-		l.signout().click();
+		//l.signout().click();
 		
 	}
 	
-	    @AfterTest
+	   /*@AfterTest
 		public void close()
 		{
 			driver.close();
-		}
+		}*/
 	
 }

@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.672 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 93.344 s <<< FAILURE! - in TestSuite
+CCS.login_page_test_using_dataprovider_annotation.login_multiple_data  Time elapsed: 4.119 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-K7Q1R6A', ip: '192.168.43.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Samson\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69dfcce39b1ec81fd4af8e6ce8cb4c75
+*** Element info: {Using=css selector, value=input[id='email']}
+	at CCS.login_page_test_using_dataprovider_annotation.login_multiple_data(login_page_test_using_dataprovider_annotation.java:38)
+

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import pageObjects.Home_pageobject_elements;
 import pageObjects.login_Pageobjects_elements;
 import resources.base;
 
@@ -30,6 +31,9 @@ public class login_page_test_using_dataprovider_annotation extends base {
 	@Test(dataProvider="getdata")
 	public void login_multiple_data(String username, String password) throws IOException
 	{	
+		Home_pageobject_elements hp= new Home_pageobject_elements(driver);
+		hp.navigatesigninpage().click();
+		
 		login_Pageobjects_elements l=new login_Pageobjects_elements(driver);
 		l.loginuser().sendKeys(username);
 		l.loginpass().sendKeys(password);
@@ -41,8 +45,8 @@ public class login_page_test_using_dataprovider_annotation extends base {
 	public Object[][] getdata()
 	{
 		Object [][] data= new Object[1][2];
-		data [0][0]="dev";
-		data[0][1]="Password";
+		data [0][0]="samsonkaki1995@gmail.com";
+		data[0][1]="Christ@8374";
 		//data[1][0]="invalid username";
 		//data[1][1]="invalid password";
 		return data;
@@ -56,10 +60,9 @@ public class login_page_test_using_dataprovider_annotation extends base {
 	}
 
 
-	@AfterTest
+	/*@AfterTest
 	public void close()
 	{
 		driver.close();
-	}
-
+	}*/
 }

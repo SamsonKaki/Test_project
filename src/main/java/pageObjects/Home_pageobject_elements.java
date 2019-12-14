@@ -9,7 +9,7 @@ public class Home_pageobject_elements {
 	public WebDriver driver;
 	
 	
-	By myforms=By.cssSelector("[id*='myforms']");
+	By signinbutton=By.cssSelector("a[href*='my-account']");
 	
 	
 	public Home_pageobject_elements(WebDriver driver)
@@ -20,9 +20,9 @@ public class Home_pageobject_elements {
 	}
 	
 	
-	public WebElement myformsdata()
+	public WebElement navigatesigninpage()
 	{
-		return driver.findElement(myforms);
+		return driver.findElement(signinbutton);
 	   }
 
 }
