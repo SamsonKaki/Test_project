@@ -17,6 +17,12 @@
     <class name="CCS.login_page_test"/>
     </classes>
       </test>
+      
+       <test name="Test5">
+    <classes>
+    <class name="Search_bar"/>
+    </classes>
+      </test>
 
  <test name="Test4">
      <classes>

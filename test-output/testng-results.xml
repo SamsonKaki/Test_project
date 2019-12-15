@@ -1,87 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42152" started-at="2019-12-15T10:59:39Z" finished-at="2019-12-15T11:00:22Z">
+  <suite name="Suite" duration-ms="123006" started-at="2019-12-15T11:15:23Z" finished-at="2019-12-15T11:17:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42152" started-at="2019-12-15T10:59:39Z" finished-at="2019-12-15T11:00:22Z">
-      <class name="CCS.Search_bar">
-        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Search_bar@2f0a87b3]" name="starttest" is-config="true" duration-ms="31750" started-at="2019-12-15T10:59:39Z" finished-at="2019-12-15T11:00:11Z">
+    <test name="Test1" duration-ms="35272" started-at="2019-12-15T11:15:23Z" finished-at="2019-12-15T11:15:58Z">
+      <class name="CCS.Home_page_test">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Home_page_test@b3d7190]" name="starttest" is-config="true" duration-ms="27072" started-at="2019-12-15T11:15:23Z" finished-at="2019-12-15T11:15:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starttest -->
-        <test-method status="FAIL" signature="login()[pri:0, instance:CCS.Search_bar@2f0a87b3]" name="login" duration-ms="10306" started-at="2019-12-15T11:00:11Z" finished-at="2019-12-15T11:00:22Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"a[href*='my5-account']"}
-  (Session info: chrome=79.0.3945.79)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K7Q1R6A', ip: '192.168.29.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Samson\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f006f8307f295ebaac813c34cf0c79ed
-*** Element info: {Using=css selector, value=a[href*='my5-account']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href*='my5-account']"}
-  (Session info: chrome=79.0.3945.79)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K7Q1R6A', ip: '192.168.29.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\Samson\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:54885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f006f8307f295ebaac813c34cf0c79ed
-*** Element info: {Using=css selector, value=a[href*='my5-account']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pageObjects.Home_pageobject_elements.navigatesigninpage(Home_pageobject_elements.java:25)
-at CCS.Search_bar.login(Search_bar.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="homepage(java.lang.String, java.lang.String)[pri:0, instance:CCS.Home_page_test@b3d7190]" name="homepage" duration-ms="8088" started-at="2019-12-15T11:15:50Z" data-provider="getdata" finished-at="2019-12-15T11:15:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsonkaki1995@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Christ@8374]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+      </class> <!-- CCS.Home_page_test -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="33734" started-at="2019-12-15T11:15:59Z" finished-at="2019-12-15T11:16:33Z">
+      <class name="CCS.login_page_test">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test@80169cf]" name="starttest" is-config="true" duration-ms="21065" started-at="2019-12-15T11:15:59Z" finished-at="2019-12-15T11:16:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:CCS.login_page_test@80169cf]" name="login" duration-ms="12663" started-at="2019-12-15T11:16:20Z" finished-at="2019-12-15T11:16:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- CCS.Search_bar -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- CCS.login_page_test -->
+    </test> <!-- Test2 -->
+    <test name="Test4" duration-ms="1" started-at="2019-12-15T11:16:33Z" finished-at="2019-12-15T11:16:33Z">
+    </test> <!-- Test4 -->
+    <test name="Test3" duration-ms="53330" started-at="2019-12-15T11:16:33Z" finished-at="2019-12-15T11:17:26Z">
+      <class name="CCS.login_page_test_using_dataprovider_annotation">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@689604d9]" name="starttest" is-config="true" duration-ms="27280" started-at="2019-12-15T11:16:33Z" finished-at="2019-12-15T11:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starttest -->
+        <test-method status="PASS" signature="login_multiple_data(java.lang.String, java.lang.String)[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@689604d9]" name="login_multiple_data" duration-ms="26045" started-at="2019-12-15T11:17:00Z" data-provider="getdata" finished-at="2019-12-15T11:17:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[samsonkaki1995@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Christ@8374]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_multiple_data -->
+      </class> <!-- CCS.login_page_test_using_dataprovider_annotation -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
 </testng-results>
