@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-<listeners>
-<!--<listener class-name="CCS.listeners"/>-->
- <listener class-name="resources.ExtentReporterNG"/>
-</listeners>
-     <test name="Test1">
-      <classes>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="CCS.Search_bar"/>
       <class name="CCS.Home_page_test"/>
-      </classes>
-      </test>
-       
-    <test name="Test2">
-    <classes>
-    <class name="CCS.login_page_test"/>
+      <class name="CCS.login_page_test"/>
+      <class name="CCS.login_page_test_using_dataprovider_annotation"/>
+      <class name="CCS.AppTest"/>
     </classes>
-      </test>
-      
-       <test name="Test5">
-    <classes>
-    <class name="Search_bar"/>
-    </classes>
-      </test>
-
- <test name="Test4">
-     <classes>
-     <class name="CCS.AppTest"/>
-     </classes>
-    </test>
-    
-         <test name="Test3">
-         <classes>
-         <class name="CCS.login_page_test_using_dataprovider_annotation"/>
-         </classes>
-         </test>
-    
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
