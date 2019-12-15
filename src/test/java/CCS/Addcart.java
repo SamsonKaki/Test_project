@@ -8,11 +8,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pageObjects.Add_cart_objects;
 import pageObjects.Home_pageobject_elements;
 import pageObjects.login_Pageobjects_elements;
+import pageObjects.search_page_objects;
 import resources.base;
 
-public class login_page_test extends base {
+public class Addcart extends base {
 	// public static Logger log =LogManager.getLogger(base.class.getName());
 	
     @BeforeTest
@@ -36,6 +38,13 @@ public class login_page_test extends base {
 		l.loginbutt().click();
 		//l.signout().click();
 		
+		search_page_objects sb= new search_page_objects(driver);
+		sb.searchitem().sendKeys("dresses");
+		sb.searchbutton().click();
+		
+		Add_cart_objects ac= new Add_cart_objects(driver);
+		ac.selectdress().click();
+		ac.addcart().click();
 	}
 	
 	   /*@AfterTest

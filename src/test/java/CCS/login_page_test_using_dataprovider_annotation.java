@@ -34,7 +34,7 @@ public class login_page_test_using_dataprovider_annotation extends base {
 		Home_pageobject_elements hp= new Home_pageobject_elements(driver);
 		hp.navigatesigninpage().click();
 		
-		login_Pageobjects_elements l=new login_Pageobjects_elements(driver);
+	 login_Pageobjects_elements l=new login_Pageobjects_elements(driver);
 		l.loginuser().sendKeys(username);
 		l.loginpass().sendKeys(password);
 		l.loginbutt().click();
@@ -50,14 +50,6 @@ public class login_page_test_using_dataprovider_annotation extends base {
 		//data[1][0]="invalid username";
 		//data[1][1]="invalid password";
 		return data;
-		
-			
-	}
-	
-	private void gituser() {
-		// TODO Auto-generated method stub
-		System.out.println("gitsuff");
-	}
 
 
 	/*@AfterTest
@@ -65,4 +57,5 @@ public class login_page_test_using_dataprovider_annotation extends base {
 	{
 		driver.close();
 	}*/
-}
+	      }
+	  }

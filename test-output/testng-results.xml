@@ -1,83 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="96915" started-at="2019-12-15T11:59:07Z" finished-at="2019-12-15T12:00:44Z">
+  <suite name="Default suite" duration-ms="38392" started-at="2019-12-15T12:34:30Z" finished-at="2019-12-15T12:35:08Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="21713" started-at="2019-12-15T11:59:07Z" finished-at="2019-12-15T11:59:29Z">
-      <class name="CCS.Home_page_test">
-        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Home_page_test@b3d7190]" name="starttest" is-config="true" duration-ms="16659" started-at="2019-12-15T11:59:07Z" finished-at="2019-12-15T11:59:24Z">
+    <test name="Default test" duration-ms="38392" started-at="2019-12-15T12:34:30Z" finished-at="2019-12-15T12:35:08Z">
+      <class name="CCS.Addcart">
+        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Addcart@2f0a87b3]" name="starttest" is-config="true" duration-ms="22399" started-at="2019-12-15T12:34:30Z" finished-at="2019-12-15T12:34:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- starttest -->
-        <test-method status="PASS" signature="homepage(java.lang.String, java.lang.String)[pri:0, instance:CCS.Home_page_test@b3d7190]" name="homepage" duration-ms="5008" started-at="2019-12-15T11:59:24Z" data-provider="getdata" finished-at="2019-12-15T11:59:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsonkaki1995@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Christ@8374]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homepage -->
-      </class> <!-- CCS.Home_page_test -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="23029" started-at="2019-12-15T11:59:29Z" finished-at="2019-12-15T11:59:52Z">
-      <class name="CCS.login_page_test">
-        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test@80169cf]" name="starttest" is-config="true" duration-ms="15913" started-at="2019-12-15T11:59:29Z" finished-at="2019-12-15T11:59:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starttest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:CCS.login_page_test@80169cf]" name="login" duration-ms="7111" started-at="2019-12-15T11:59:45Z" finished-at="2019-12-15T11:59:52Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:CCS.Addcart@2f0a87b3]" name="login" duration-ms="15960" started-at="2019-12-15T12:34:52Z" finished-at="2019-12-15T12:35:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- CCS.login_page_test -->
-    </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="1" started-at="2019-12-15T11:59:52Z" finished-at="2019-12-15T11:59:52Z">
-    </test> <!-- Test3 -->
-    <test name="Test4" duration-ms="22813" started-at="2019-12-15T11:59:52Z" finished-at="2019-12-15T12:00:15Z">
-      <class name="CCS.login_page_test_using_dataprovider_annotation">
-        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@689604d9]" name="starttest" is-config="true" duration-ms="16976" started-at="2019-12-15T11:59:52Z" finished-at="2019-12-15T12:00:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starttest -->
-        <test-method status="PASS" signature="login_multiple_data(java.lang.String, java.lang.String)[pri:0, instance:CCS.login_page_test_using_dataprovider_annotation@689604d9]" name="login_multiple_data" duration-ms="5830" started-at="2019-12-15T12:00:09Z" data-provider="getdata" finished-at="2019-12-15T12:00:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[samsonkaki1995@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Christ@8374]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login_multiple_data -->
-      </class> <!-- CCS.login_page_test_using_dataprovider_annotation -->
-    </test> <!-- Test4 -->
-    <test name="Test5" duration-ms="29182" started-at="2019-12-15T12:00:15Z" finished-at="2019-12-15T12:00:44Z">
-      <class name="CCS.Search_bar">
-        <test-method status="PASS" signature="starttest()[pri:0, instance:CCS.Search_bar@2a65fe7c]" name="starttest" is-config="true" duration-ms="16847" started-at="2019-12-15T12:00:15Z" finished-at="2019-12-15T12:00:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- starttest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:CCS.Search_bar@2a65fe7c]" name="login" duration-ms="12331" started-at="2019-12-15T12:00:32Z" finished-at="2019-12-15T12:00:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- CCS.Search_bar -->
-    </test> <!-- Test5 -->
-  </suite> <!-- Suite -->
+      </class> <!-- CCS.Addcart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
