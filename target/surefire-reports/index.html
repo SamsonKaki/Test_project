@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="CCS.login_page_test" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="CCS.Search_bar" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +144,21 @@
                   </a> <!-- homepage(samsonkaki1995@gmail.com, Christ@8374) -->
                   <span class="method-name">homepage</span>
                   <span class="parameters">(samsonkaki1995@gmail.com, Christ@8374)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CCS.Search_bar</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,16 +217,21 @@
       &lt;class name=&quot;CCS.login_page_test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test4&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test3&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;CCS.AppTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test4 --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test3&quot;&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test4&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;CCS.login_page_test_using_dataprovider_annotation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;CCS.Search_bar&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,10 +249,13 @@
                 <span class="test-name">Test2 (1 class)</span>
               </li>
               <li>
+                <span class="test-name">Test3 (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Test4 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Test3 (1 class)</span>
+                <span class="test-name">Test5 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,24 +281,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login_multiple_data')
-data.setCell(0, 2, 'CCS.login_page_test_using_dataprovider_annotation')
-data.setCell(0, 3, 19264);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'CCS.Search_bar')
+data.setCell(0, 3, 11093);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'CCS.login_page_test')
-data.setCell(1, 3, 13819);
+data.setCell(1, 1, 'login_multiple_data')
+data.setCell(1, 2, 'CCS.login_page_test_using_dataprovider_annotation')
+data.setCell(1, 3, 8182);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'homepage')
-data.setCell(2, 2, 'CCS.Home_page_test')
-data.setCell(2, 3, 12195);
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'CCS.login_page_test')
+data.setCell(2, 3, 7329);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'homepage')
+data.setCell(3, 2, 'CCS.Home_page_test')
+data.setCell(3, 3, 6190);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -303,29 +335,40 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">homepage(samsonkaki1995@gmail.com, Christ@8374)</span>
-                <span class="method-start">27246 ms</span>
+                <span class="method-start">16459 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CCS.login_page_test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">starttest</span>
-                <span class="method-start">39883 ms</span>
+                <span class="method-start">22825 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">67155 ms</span>
+                <span class="method-start">39905 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">CCS.login_page_test_using_dataprovider_annotation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">starttest</span>
-                <span class="method-start">81223 ms</span>
+                <span class="method-start">47287 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login_multiple_data(samsonkaki1995@gmail.com, Christ@8374)</span>
-                <span class="method-start">125883 ms</span>
+                <span class="method-start">65161 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CCS.Search_bar</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">starttest</span>
+                <span class="method-start">73385 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">90285 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
